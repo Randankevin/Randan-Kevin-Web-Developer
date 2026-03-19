@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-webpage-mr4v.onrender.com/sitemap.xml
