@@ -3,26 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randan Kevin Web Developer Portfolio Webpage</title>
+    <title>Randan Kevin | Web Developer Portfolio</title>
     <meta name="google-site-verification" content="4YwJf-fPjN1oeLpWFVrrRouOB8QhsLA7FAmO2CQ3BT0" />
-    <meta name="description" content="Randan Kevin is a full stack web developer with 2+ years of experience building modern, performant web applications.">
-    <meta name="title" content="Randan Kevin Web Developer Portfolio Webpage">
+    <meta name="description" content="Randan Kevin is a web developer building interactive web applications, games, and useful digital experiences.">
+    
     <meta name="author" content="Randan Kevin">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://portfolio-webpage-mr4v.onrender.com/">
-    <meta property="og:title" content="Randan Kevin Web Developer Portfolio Webpage">
+    <link rel="canonical" href="https://randankevin.github.io/Randan-Kevin-Web-Developer/">
+    <meta property="og:title" content="Randan Kevin | Web Developer Portfolio">
     <meta property="og:description" content="Randan Kevin is a full stack web developer with 2+ years of experience building modern, performant web applications.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Randan Kevin Web Developer Portfolio Webpage">
     <meta property="og:url" content="https://portfolio-webpage-mr4v.onrender.com/">
     <meta property="og:image" content="https://portfolio-webpage-mr4v.onrender.com/images/profile.jpg">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Randan Kevin Web Developer Portfolio Webpage">
     <meta name="twitter:description" content="Randan Kevin is a full stack web developer with 2+ years of experience building modern, performant web applications.">
     <meta name="twitter:image" content="https://portfolio-webpage-mr4v.onrender.com/images/profile.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/_sdk/element_sdk.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -164,9 +163,22 @@
         opacity: 1;
         visibility: visible;
       }
+
+      :focus-visible {
+        outline: 3px solid #8bc484;
+        outline-offset: 3px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
     </style>
     <style>@view-transition { navigation: auto; }</style>
-    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
   </head>
   <body class="h-full">
     <!-- Scroll to Top Button -->
@@ -196,12 +208,13 @@
           </div>
           
           <!-- CTA Button -->
+          <a href="resume.html" class="px-4 py-2 border border-[#5fa04e]/50 text-[#e6edf3] rounded-lg font-medium text-sm transition-colors hidden sm:block mr-2">Résumé</a>
           <a href="#contact" class="px-4 py-2 bg-[#5fa04e] hover:bg-[#4a8a3d] text-[#0d1117] rounded-lg font-medium text-sm transition-colors hidden sm:block">
             Hire Me
           </a>
           
           <!-- Mobile Menu Button -->
-          <button id="mobileMenuBtn" class="md:hidden w-10 h-10 flex items-center justify-center text-[#e6edf3]" aria-label="Toggle menu">
+          <button id="mobileMenuBtn" class="md:hidden w-10 h-10 flex items-center justify-center text-[#e6edf3]" aria-label="Open navigation menu" aria-controls="mobileMenu" aria-expanded="false">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -213,7 +226,7 @@
       <div id="overlay" class="overlay fixed inset-0 bg-black/50 z-40 md:hidden"></div>
       
       <!-- Mobile Menu -->
-      <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-64 h-full bg-[#161b22] z-50 md:hidden flex flex-col pt-24 px-6">
+      <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 w-64 h-full bg-[#161b22] z-50 md:hidden flex flex-col pt-24 px-6" role="dialog" aria-modal="true" aria-label="Mobile navigation" aria-hidden="true" inert>
         <button id="closeMenuBtn" class="absolute top-6 right-6 w-10 h-10 flex items-center justify-center text-[#e6edf3]" aria-label="Close menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -224,6 +237,7 @@
           <a href="#skills" class="text-[#e6edf3]/70 hover:text-[#e6edf3] text-lg transition-colors">Skills</a>
           <a href="#projects" class="text-[#e6edf3]/70 hover:text-[#e6edf3] text-lg transition-colors">Projects</a>
           <a href="#contact" class="text-[#e6edf3]/70 hover:text-[#e6edf3] text-lg transition-colors">Contact</a>
+          <a href="resume.html" class="px-6 py-3 border border-[#5fa04e]/50 text-[#e6edf3] rounded-lg font-medium text-center">View Résumé</a>
           <a href="#contact" class="px-6 py-3 bg-[#5fa04e] text-[#0d1117] rounded-lg font-medium text-center transition-colors">
             Hire Me
           </a>
@@ -231,12 +245,14 @@
       </div>
 
       <!-- Hero Section -->
+      <a class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:bg-[#5fa04e] focus:text-[#0d1117] focus:px-4 focus:py-3" href="#about">Skip to main content</a>
+      <main id="main-content">
       <section class="min-h-screen flex items-center justify-center pt-20 px-6">
         <div class="max-w-4xl mx-auto text-center">
           <div class="animate-fade-in delay-1 mb-8">
             <div class="flex justify-center">
               <div class="relative animate-float">
-                <img src="images/profile.jpg" alt="Randan Kevin - Full Stack Web Developer" class="w-40 h-40 rounded-full object-cover border-4 border-[#5fa04e] shadow-2xl">
+                <img src="images/profile.jpg" alt="Randan Kevin" width="160" height="160" fetchpriority="high" decoding="async" class="w-40 h-40 rounded-full object-cover border-4 border-[#5fa04e] shadow-2xl">
                 <div class="absolute -bottom-2 -right-2 w-10 h-10 bg-[#5fa04e] rounded-full flex items-center justify-center shadow-lg">
                   <span class="text-[#0d1117] font-bold text-lg"></></span>
                 </div>
@@ -246,7 +262,7 @@
           <div class="animate-fade-in delay-1">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#5fa04e]/10 border border-[#5fa04e]/30 mb-8">
               <span class="w-2 h-2 rounded-full bg-[#5fa04e] animate-pulse"></span>
-              <span class="text-[#5fa04e] text-sm font-mono">Available for work</span>
+              <span class="text-[#5fa04e] text-sm font-mono">Open to conversations</span>
             </div>
           </div>
           <h1 class="animate-fade-in delay-2 text-4xl md:text-6xl lg:text-7xl font-bold text-[#e6edf3] mb-4">
@@ -256,9 +272,10 @@
             Full Stack Web Developer
           </p>
           <p id="hero-tagline" class="animate-fade-in delay-4 text-base md:text-lg text-[#e6edf3]/50 max-w-2xl mx-auto mb-10">
-            Building the web, one line at a time. 2+ years of crafting modern, performant, and user-friendly web applications.
+            I build interactive web applications and digital experiences, from useful tools to playful browser games.
           </p>
           <div class="animate-fade-in delay-4 flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+            <a href="resume.html" class="px-8 py-3 border border-[#5fa04e]/50 text-[#e6edf3] rounded-lg font-semibold transition-colors">View Résumé</a>
             <a href="#projects" class="px-8 py-3 bg-[#5fa04e] hover:bg-[#4a8a3d] text-[#0d1117] rounded-lg font-semibold transition-all hover:scale-105">
               View My Work
             </a>
@@ -278,7 +295,7 @@
               </div>
               <div class="p-4 font-mono text-sm text-left">
                 <p class="text-[#5fa04e]">$ <span class="text-[#e6edf3]">whoami</span></p>
-                <p class="text-[#e6edf3]/70 mt-1">web_developer with 2_years_experience</p>
+                <p class="text-[#e6edf3]/70 mt-1">web_developer focused on useful experiences</p>
                 <p class="text-[#5fa04e] mt-3">$ <span class="text-[#e6edf3]">cat skills.txt</span></p>
                 <p class="text-[#e6edf3]/70 mt-1">JavaScript, React, Node.js, and more...</p>
                 <p class="text-[#5fa04e] mt-3">$ <span class="text-[#e6edf3] terminal-cursor">_</span></p>
@@ -298,7 +315,7 @@
                 Passionate about <span class="text-gradient">clean code</span>
               </h2>
               <p id="about-text" class="text-[#e6edf3]/70 leading-relaxed mb-6">
-                I'm a dedicated web developer with 2+ years of hands-on experience building modern web applications. I love turning complex problems into simple, beautiful, and intuitive solutions. My focus is on writing clean, maintainable code that scales.
+                I build web applications that make everyday tasks clearer and more engaging. My work spans responsive interfaces, interactive browser experiences, and full-stack projects. I focus on understandable code and practical user flows.
               </p>
               <p class="text-[#e6edf3]/70 leading-relaxed mb-8">
                 When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.
@@ -349,7 +366,7 @@
                     <svg class="w-5 h-5 text-[#5fa04e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span>2+ Years Experience</span>
+                    <span>Web applications &amp; interactive projects</span>
                   </div>
                 </div>
               </div>
@@ -439,7 +456,7 @@
             <!-- Project 1 - Truth or Dare -->
             <div class="bg-[#161b22] rounded-xl border border-[#5fa04e]/20 overflow-hidden card-hover group">
               <div class="h-48 bg-gradient-to-br from-[#5fa04e]/20 to-[#3e6b35]/20 flex items-center justify-center overflow-hidden">
-                <img src="images/projects/Truth or dare game.png" alt="Truth or Dare Game - Interactive web-based game" class="w-full h-full object-contain p-4 bg-[#0d1117]" loading="lazy">
+                <img src="images/projects/Truth or dare game.png" alt="Truth or Dare Game - Interactive web-based game" class="w-full h-full object-contain p-4 bg-[#0d1117]" width="640" height="360" loading="lazy" decoding="async">
               </div>
               <div class="p-6">
                 <div class="flex flex-wrap items-center gap-2 mb-3">
@@ -447,11 +464,12 @@
                   <span class="px-2 py-1 bg-[#5fa04e]/20 text-[#5fa04e] text-xs rounded font-mono">JavaScript</span>
                 </div>
                 <h3 class="text-xl font-semibold text-[#e6edf3] mb-2">Truth or Dare Game</h3>
-                <p class="text-[#e6edf3]/60 text-sm mb-4">An interactive multiplayer game with random question generation, responsive design, and smooth animations for fun gatherings.</p>
+                <p class="text-[#e6edf3]/60 text-sm mb-4">Built for quick group play: choose truth or dare and get randomized prompts in a responsive interface.</p>
                 <div class="flex items-center gap-4">
                   <a href="https://truth-or-dare-wxv8.onrender.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#5fa04e] text-[#0d1117] rounded font-mono text-sm hover:bg-[#4a8a3d] transition-colors">
                     Live Demo
                   </a>
+                  <a href="https://github.com/Randankevin/truth-or-dare" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border border-[#5fa04e]/40 text-[#e6edf3] rounded font-mono text-sm hover:border-[#5fa04e] transition-colors">Source</a>
                 </div>
               </div>
             </div>
@@ -467,11 +485,12 @@
                   <span class="px-2 py-1 bg-[#5fa04e]/20 text-[#5fa04e] text-xs rounded font-mono">CSS</span>
                 </div>
                 <h3 class="text-xl font-semibold text-[#e6edf3] mb-2">HD Wallpaper Hub</h3>
-                <p class="text-[#e6edf3]/60 text-sm mb-4">A curated gallery featuring category filtering, search functionality, and high-quality downloads for desktop and mobile devices.</p>
+                <p class="text-[#e6edf3]/60 text-sm mb-4">A searchable wallpaper gallery with category filters and device-aware desktop and phone collections. The download flow is built around signed-in users.</p>
                 <div class="flex items-center gap-4">
-                  <a href="https://hd-wallpaper-hub.onrender.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#5fa04e] text-[#0d1117] rounded font-mono text-sm hover:bg-[#4a8a3d] transition-colors">
+                  <a href="https://randankevin.github.io/HD-Wallpaper-Hub/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#5fa04e] text-[#0d1117] rounded font-mono text-sm hover:bg-[#4a8a3d] transition-colors">
                     Live Demo
                   </a>
+                  <a href="https://github.com/Randankevin/HD-Wallpaper-Hub" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border border-[#5fa04e]/40 text-[#e6edf3] rounded font-mono text-sm hover:border-[#5fa04e] transition-colors">Source</a>
                 </div>
               </div>
             </div>
@@ -487,11 +506,12 @@
                   <span class="px-2 py-1 bg-[#5fa04e]/20 text-[#5fa04e] text-xs rounded font-mono">CSS</span>
                 </div>
                 <h3 class="text-xl font-semibold text-[#e6edf3] mb-2">LifeGiver Platform</h3>
-                <p class="text-[#e6edf3]/60 text-sm mb-4">A professional information platform providing resources and guidance on donation programs with a clean, accessible design.</p>
+                <p class="text-[#e6edf3]/60 text-sm mb-4">An information site that organizes donation program guidance and resources into a clear, mobile-friendly experience.</p>
                 <div class="flex items-center gap-4">
                   <a href="https://lifegiver.onrender.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#5fa04e] text-[#0d1117] rounded font-mono text-sm hover:bg-[#4a8a3d] transition-colors">
                     Live Demo
                   </a>
+                  <a href="https://github.com/Randankevin/lifegiver" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border border-[#5fa04e]/40 text-[#e6edf3] rounded font-mono text-sm hover:border-[#5fa04e] transition-colors">Source</a>
                 </div>
               </div>
             </div>
@@ -507,11 +527,12 @@
                   <span class="px-2 py-1 bg-[#5fa04e]/20 text-[#5fa04e] text-xs rounded font-mono">JavaScript</span>
                 </div>
                 <h3 class="text-xl font-semibold text-[#e6edf3] mb-2">Neon Snake Game</h3>
-                <p class="text-[#e6edf3]/60 text-sm mb-4">A modern neon-themed take on the classic arcade game with smooth animations, responsive controls, and score tracking.</p>
+                <p class="text-[#e6edf3]/60 text-sm mb-4">A browser arcade game that pairs keyboard-friendly play with a neon visual style and score tracking.</p>
                 <div class="flex items-center gap-4">
                   <a href="https://neon-snake-game-2.vercel.app/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#5fa04e] text-[#0d1117] rounded font-mono text-sm hover:bg-[#4a8a3d] transition-colors">
                     Live Demo
                   </a>
+                  <a href="https://github.com/Randankevin/Neon-snake-game-2" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border border-[#5fa04e]/40 text-[#e6edf3] rounded font-mono text-sm hover:border-[#5fa04e] transition-colors">Source</a>
                 </div>
               </div>
             </div>
@@ -527,11 +548,12 @@
                   <span class="px-2 py-1 bg-[#5fa04e]/20 text-[#5fa04e] text-xs rounded font-mono">Node.js</span>
                 </div>
                 <h3 class="text-xl font-semibold text-[#e6edf3] mb-2">Reminder App</h3>
-                <p class="text-[#e6edf3]/60 text-sm mb-4">A full-stack task management application with notifications, recurring reminders, priority scheduling, and user authentication.</p>
+                <p class="text-[#e6edf3]/60 text-sm mb-4">A task manager for recurring reminders and priorities, with account-based flows and a React interface.</p>
                 <div class="flex items-center gap-4">
                   <a href="https://randankevin.github.io/Reminder-app/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#5fa04e] text-[#0d1117] rounded font-mono text-sm hover:bg-[#4a8a3d] transition-colors">
                     Live Demo
                   </a>
+                  <a href="https://github.com/Randankevin/Reminder-app" target="_blank" rel="noopener noreferrer" class="px-4 py-2 border border-[#5fa04e]/40 text-[#e6edf3] rounded font-mono text-sm hover:border-[#5fa04e] transition-colors">Source</a>
                 </div>
               </div>
             </div>
@@ -547,7 +569,7 @@
                   <span class="px-2 py-1 bg-[#5fa04e]/20 text-[#5fa04e] text-xs rounded font-mono">Express</span>
                 </div>
                 <h3 class="text-xl font-semibold text-[#e6edf3] mb-2">Chat Application</h3>
-                <p class="text-[#e6edf3]/60 text-sm mb-4">Real-time messaging platform with multiple rooms, private messaging, user presence indicators, and file sharing capabilities.</p>
+                <p class="text-[#e6edf3]/60 text-sm mb-4">A real-time chat concept organized around rooms, private conversations, presence, and shared files.</p>
               </div>
             </div>
           </div>
@@ -610,6 +632,7 @@
         </div>
       </section>
 
+      </main>
       <!-- Footer -->
       <footer class="py-8 px-6 border-t border-[#5fa04e]/20">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
@@ -617,7 +640,7 @@
             <div class="w-6 h-6 rounded bg-[#5fa04e] flex items-center justify-center">
               <span class="text-[#0d1117] font-bold font-mono text-xs"></></span>
             </div>
-            <span id="footer-name" class="text-[#e6edf3]/70 text-sm">© 2025 Randan Kevin. All rights reserved.</span>
+            <span id="footer-name" class="text-[#e6edf3]/70 text-sm">© 2026 Randan Kevin. All rights reserved.</span>
           </div>
           <div class="flex items-center gap-4">
             <p class="text-[#e6edf3]/50 text-sm font-mono">Built with 💚 and lots of coffee</p>
@@ -627,169 +650,64 @@
     </div>
     
     <script>
-      // Mobile Menu Functionality
       const mobileMenuBtn = document.getElementById('mobileMenuBtn');
       const closeMenuBtn = document.getElementById('closeMenuBtn');
       const mobileMenu = document.getElementById('mobileMenu');
       const overlay = document.getElementById('overlay');
-      
+
       function openMenu() {
         mobileMenu.classList.add('open');
         overlay.classList.add('visible');
+        mobileMenu.removeAttribute('inert');
+        mobileMenu.setAttribute('aria-hidden', 'false');
+        mobileMenuBtn.setAttribute('aria-expanded', 'true');
+        mobileMenuBtn.setAttribute('aria-label', 'Close navigation menu');
         document.body.style.overflow = 'hidden';
+        closeMenuBtn.focus();
       }
-      
+
       function closeMenu() {
         mobileMenu.classList.remove('open');
         overlay.classList.remove('visible');
+        mobileMenu.setAttribute('inert', '');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        mobileMenuBtn.setAttribute('aria-label', 'Open navigation menu');
         document.body.style.overflow = '';
+        mobileMenuBtn.focus();
       }
-      
-      mobileMenuBtn.addEventListener('click', openMenu);
+
+      mobileMenuBtn.addEventListener('click', () => {
+        if (mobileMenuBtn.getAttribute('aria-expanded') === 'true') closeMenu();
+        else openMenu();
+      });
       closeMenuBtn.addEventListener('click', closeMenu);
       overlay.addEventListener('click', closeMenu);
-      
-      // Close menu when clicking a link
-      document.querySelectorAll('#mobileMenu a').forEach(link => {
-        link.addEventListener('click', closeMenu);
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && mobileMenuBtn.getAttribute('aria-expanded') === 'true') closeMenu();
       });
-      
-      // Scroll to Top Functionality
+      document.querySelectorAll('#mobileMenu a').forEach((link) => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          overlay.classList.remove('visible');
+          mobileMenu.setAttribute('inert', '');
+          mobileMenu.setAttribute('aria-hidden', 'true');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+          mobileMenuBtn.setAttribute('aria-label', 'Open navigation menu');
+          document.body.style.overflow = '';
+        });
+      });
+
       const scrollToTopBtn = document.getElementById('scrollToTop');
-      
       window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-          scrollToTopBtn.classList.add('visible');
-        } else {
-          scrollToTopBtn.classList.remove('visible');
-        }
-      });
-      
+        scrollToTopBtn.classList.toggle('visible', window.pageYOffset > 300);
+      }, { passive: true });
       scrollToTopBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
-      const defaultConfig = {
-        developer_name: 'Randan Kevin',
-        developer_title: 'Full Stack Web Developer',
-        hero_tagline: 'Building the web, one line at a time. 2+ years of crafting modern, performant, and user-friendly web applications.',
-        about_text: "I'm a dedicated web developer with 2+ years of hands-on experience building modern web applications. I love turning complex problems into simple, beautiful, and intuitive solutions. My focus is on writing clean, maintainable code that scales.",
-        email_address: 'randankevin@zetech.ac.ke',
-        github_url: 'randankevin',
-        linkedin_url: 'randankevin',
-        primary_color: '#5fa04e',
-        background_color: '#0d1117',
-        surface_color: '#161b22',
-        text_color: '#e6edf3',
-        accent_color: '#3e6b35'
-      };
-
-      async function onConfigChange(config) {
-        const name = config.developer_name || defaultConfig.developer_name;
-        const title = config.developer_title || defaultConfig.developer_title;
-        const tagline = config.hero_tagline || defaultConfig.hero_tagline;
-        const aboutText = config.about_text || defaultConfig.about_text;
-        const email = config.email_address || defaultConfig.email_address;
-        const github = config.github_url || defaultConfig.github_url;
-        const linkedin = config.linkedin_url || defaultConfig.linkedin_url;
-        const primaryColor = config.primary_color || defaultConfig.primary_color;
-        const bgColor = config.background_color || defaultConfig.background_color;
-        const surfaceColor = config.surface_color || defaultConfig.surface_color;
-        const textColor = config.text_color || defaultConfig.text_color;
-
-        // Update hero section
-        const heroName = document.getElementById('hero-name');
-        if (heroName) heroName.textContent = name;
-        
-        const heroTitle = document.getElementById('hero-title');
-        if (heroTitle) heroTitle.textContent = title;
-        
-        const heroTagline = document.getElementById('hero-tagline');
-        if (heroTagline) heroTagline.textContent = tagline;
-
-        // Update about section
-        const aboutTextEl = document.getElementById('about-text');
-        if (aboutTextEl) aboutTextEl.textContent = aboutText;
-        
-        const aboutName = document.getElementById('about-name');
-        if (aboutName) aboutName.textContent = name;
-
-        // Update contact section
-        const emailLink = document.getElementById('email-link');
-        if (emailLink) emailLink.href = `mailto:${email}`;
-        
-        const emailText = document.getElementById('email-text');
-        if (emailText) emailText.textContent = email;
-        
-        const githubLink = document.getElementById('github-link');
-        if (githubLink) githubLink.href = `https://github.com/${github}`;
-        
-        const githubText = document.getElementById('github-text');
-        if (githubText) githubText.textContent = `@${github}`;
-        
-        const linkedinLink = document.getElementById('linkedin-link');
-        if (linkedinLink) linkedinLink.href = `https://linkedin.com/in/${linkedin}`;
-        
-        const linkedinText = document.getElementById('linkedin-text');
-        if (linkedinText) linkedinText.textContent = `@${linkedin}`;
-
-        // Update footer
-        const footerName = document.getElementById('footer-name');
-        if (footerName) footerName.textContent = `© 2025 ${name}. All rights reserved.`;
-
-        // Update colors via CSS custom properties
-        document.documentElement.style.setProperty('--node-green', primaryColor);
-        document.documentElement.style.setProperty('--bg-dark', bgColor);
-        document.documentElement.style.setProperty('--bg-surface', surfaceColor);
-        document.documentElement.style.setProperty('--text-primary', textColor);
-      }
-
-      function mapToCapabilities(config) {
-        return {
-          recolorables: [
-            {
-              get: () => config.background_color || defaultConfig.background_color,
-              set: (value) => { config.background_color = value; window.elementSdk.setConfig({ background_color: value }); }
-            },
-            {
-              get: () => config.surface_color || defaultConfig.surface_color,
-              set: (value) => { config.surface_color = value; window.elementSdk.setConfig({ surface_color: value }); }
-            },
-            {
-              get: () => config.text_color || defaultConfig.text_color,
-              set: (value) => { config.text_color = value; window.elementSdk.setConfig({ text_color: value }); }
-            },
-            {
-              get: () => config.primary_color || defaultConfig.primary_color,
-              set: (value) => { config.primary_color = value; window.elementSdk.setConfig({ primary_color: value }); }
-            },
-            {
-              get: () => config.accent_color || defaultConfig.accent_color,
-              set: (value) => { config.accent_color = value; window.elementSdk.setConfig({ accent_color: value }); }
-            }
-          ],
-          borderables: [],
-          fontEditable: undefined,
-          fontSizeable: undefined
-        };
-      }
-
-      function mapToEditPanelValues(config) {
-        return new Map([
-          ['developer_name', config.developer_name || defaultConfig.developer_name],
-          ['developer_title', config.developer_title || defaultConfig.developer_title],
-          ['hero_tagline', config.hero_tagline || defaultConfig.hero_tagline],
-          ['about_text', config.about_text || defaultConfig.about_text],
-          ['email_address', config.email_address || defaultConfig.email_address],
-          ['github_url', config.github_url || defaultConfig.github_url],
-          ['linkedin_url', config.linkedin_url || defaultConfig.linkedin_url],
-          ['primary_color', config.primary_color || defaultConfig.primary_color],
-          ['background_color', config.background_color || defaultConfig.background_color],
-          ['surface_color', config.surface_color || defaultConfig.surface_color],
-          ['text_color', config.text_color || defaultConfig.text_color],
-          ['accent_color', config.accent_color || defaultConfig.accent_color]
-        ]);
-      }
+      document.getElementById('footer-name').textContent =
+        `© ${new Date().getFullYear()} Randan Kevin. All rights reserved.`;
     </script>
   </body>
 </html>
