@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project-focused résumé for Randan Kevin, web developer.">
+  <meta name="theme-color" content="#0d1117">
+  <title>Randan Kevin | Project Résumé</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0d1117;--surface:#161b22;--text:#e6edf3;--muted:#a5b0bc;--green:#78bd67}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:var(--green);text-underline-offset:3px}
+    a:focus-visible,button:focus-visible{outline:3px solid #a5d695;outline-offset:3px}
+    .wrap{max-width:850px;margin:auto;padding:32px 24px 64px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px solid #344238;padding-bottom:24px}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin-bottom:8px}
+    h2{font-size:1.25rem;color:var(--green);margin:32px 0 12px}
+    h3{margin-bottom:4px}
+    .muted{color:var(--muted)}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .button{display:inline-block;background:#5fa04e;color:#0d1117;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:650}
+    .button.secondary{background:transparent;color:var(--text);border:1px solid #5fa04e}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skills span{background:#1c2b1b;border:1px solid #385833;color:#cce7c3;padding:4px 10px;border-radius:999px;font-size:.9rem}
+    article{background:var(--surface);border:1px solid #29352b;border-radius:12px;padding:18px;margin:12px 0}
+    .links{display:flex;gap:16px;flex-wrap:wrap}
+    @media print{
+      :root{color-scheme:light}
+      body{background:white;color:#182018;font-size:11pt}
+      .wrap{max-width:none;padding:0}
+      header{border-color:#aaa}
+      .muted{color:#444}
+      h2,a{color:#315d2b}
+      article{background:white;border:1px solid #aaa;break-inside:avoid;padding:12px}
+      .actions,.screen-only{display:none!important}
+    }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <p class="muted" style="margin-bottom:4px">Project résumé</p>
+        <h1>Randan Kevin</h1>
+        <p class="muted" style="margin-bottom:0">Web Developer · Kenya · Remote</p>
+      </div>
+      <div class="actions screen-only">
+        <button class="button" type="button" onclick="window.print()">Print / Save PDF</button>
+        <a class="button secondary" href="index.html">Portfolio</a>
+      </div>
+    </header>
+
+    <section aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Profile</h2>
+      <p>I build responsive web experiences, interactive browser projects, and practical applications. My portfolio includes front-end interfaces, games, and full-stack concepts.</p>
+      <p><a href="mailto:randankevin@zetech.ac.ke">randankevin@zetech.ac.ke</a> · <a href="https://github.com/randankevin">GitHub</a> · <a href="https://linkedin.com/in/randankevin">LinkedIn</a></p>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Tools and technologies</h2>
+      <div class="skills">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Express</span><span>Socket.io</span>
+      </div>
+    </section>
+
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected projects</h2>
+      <article>
+        <h3>HD Wallpaper Hub</h3>
+        <p class="muted">Responsive wallpaper discovery experience with desktop and phone collections, category filters, search, and sign-in before downloads.</p>
+        <div class="links"><a href="https://randankevin.github.io/HD-Wallpaper-Hub/">Live site</a><a href="https://github.com/Randankevin/HD-Wallpaper-Hub">Source</a></div>
+      </article>
+      <article>
+        <h3>Reminder App</h3>
+        <p class="muted">Task management interface for priorities and recurring reminders, with account-based functionality.</p>
+        <div class="links"><a href="https://randankevin.github.io/Reminder-app/">Live site</a><a href="https://github.com/Randankevin/Reminder-app">Source</a></div>
+      </article>
+      <article>
+        <h3>Truth or Dare Game</h3>
+        <p class="muted">Browser game for group play, using randomized prompts and a responsive interface.</p>
+        <div class="links"><a href="https://truth-or-dare-wxv8.onrender.com">Live site</a><a href="https://github.com/Randankevin/truth-or-dare">Source</a></div>
+      </article>
+      <article>
+        <h3>Neon Snake Game</h3>
+        <p class="muted">Neon-styled arcade game with responsive controls and score tracking.</p>
+        <div class="links"><a href="https://neon-snake-game-2.vercel.app/">Live site</a><a href="https://github.com/Randankevin/Neon-snake-game-2">Source</a></div>
+      </article>
+    </section>
+    <p class="muted" style="margin-top:28px">For detailed project previews, see the <a href="index.html#projects">portfolio</a>.</p>
+  </main>
+</body>
+</html>
